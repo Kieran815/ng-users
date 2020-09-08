@@ -30,6 +30,10 @@ export class ArticlesService {
     return this.http.put<Article>(this.url, article, httpOptions);
   }
 
+  deleteArticle(id: string): Observable<Article> {
+    return this.http.delete<Article>(`${this.url}/ ${id}`);
+  } 
+
 
   
 }
