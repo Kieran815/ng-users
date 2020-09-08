@@ -1,6 +1,6 @@
 <div *ngIf="article">
   <h1>{{article.title}}</h1>
-  <div> {{article.body}}}</div>
-  <button [routerLink]="['/users/edit/', user._id]">Edit</button>
-  <button (click)="deleteUser(user._id)">Delete</button>
+  <div> {{article.body}}</div>
+  <button [routerLink]="['/articles/edit/', article._id]">Edit</button>
+  <button (click)="deleteArticle(article._id)">Delete</button>
 </div>
