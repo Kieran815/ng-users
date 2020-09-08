@@ -7,8 +7,8 @@ const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
 };
 
-@Injectable({
-  providedIn: 'root'
+@Injectable(
+  {providedIn: 'root'
 })
 export class ArticlesService {
   private url: string = 'http://localhost:3000/api/articles';
