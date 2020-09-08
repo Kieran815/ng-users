@@ -22,8 +22,14 @@ export class ArticlesService {
     return this.http.get<Article>(`${this.url}/${slug}`)
   }
 
-  createArticle (article: Article): Observable<Article> {
+  createArticle(article: Article): Observable<Article> {
     return this.http.post<Article>(this.url, article, httpOptions);
   }
+
+  editArticle(article: Article): Observable<Article> {
+    return this.http.put<Article>(this.url, article, httpOptions);
+  }
+
+
   
 }
